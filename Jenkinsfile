@@ -16,6 +16,7 @@ pipeline {
         stage('Sende e-post Are') {
           steps {
             sh 'pwd'
+            mail(subject: 'test', body: 'laal', from: 'erv@ssb.no', to: 'are@ssb.no')
           }
         }
       }
